@@ -1,0 +1,38 @@
+
+
+<div class="container">       
+    <h1 class="text-center">Real Time Chat!</h1>
+    <div class="container row">
+        <div class="col-md-8">
+            <p id="error"></p>
+            <div id="userFormWrap">
+            <h2>Create User Name</h2>
+                <form id="userForm">
+                    <input id="userName" class="form-control" type="text" placeholder="Enter User Name">
+                    <br>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div id="mainWrap">
+                <h2>Chat Away!</h2>
+                <form id="chatForm" class="form-group">
+                    <textarea id="chatInput" name="body" class="form-control" rows="3" placeholder="Start Chatting!"></textarea>
+                    <br>
+                    <button type="submit">Submit</button>
+                </form>
+                <div id="chatWindow" class="well"></div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h3>Chat Users</h3>
+            <ul class="list-group" id="users">
+
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+{{#each scripts}} 
+    <script src="{{script}}"></script>
+{{/each}}
