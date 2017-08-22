@@ -1,6 +1,7 @@
 $(document).ready(() => {
     let messages = [];
-    let socket = io.connect('http://localhost:3000');
+    //let socket = io.connect('http://localhost:3000');
+    let socket = io();
     let chatForm = $("#chatForm");
     let message = $("#chatInput");
     let chatWindow = $("#chatWindow");
